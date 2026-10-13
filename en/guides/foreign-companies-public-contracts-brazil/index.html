@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>How Foreign Companies Win Public Contracts in Brazil: Law 14,133 Tenders, State-Owned Companies and the Petrobras Supplier Registration | Gustavo Bugalho</title>
+<meta name="description" content="A practical guide for foreign suppliers: how international tenders work under Brazil's procurement law, what changes for state-owned companies under Law 13,303, how to register as a Petrobras supplier on Petronect, local content rules for offshore work, the taxes on paying a foreign service provider, and when a Brazilian partner or subsidiary is the only realistic route. Written by a Brazilian public-law lawyer.">
+<link rel="canonical" href="https://gustavobugalho.com.br/en/guides/foreign-companies-public-contracts-brazil/">
+<meta property="og:title" content="How Foreign Companies Win Public Contracts in Brazil">
+<meta property="og:description" content="International tenders, state-owned companies, Petrobras supplier registration, local content and the cost of selling services into Brazil from abroad.">
+<meta property="og:url" content="https://gustavobugalho.com.br/en/guides/foreign-companies-public-contracts-brazil/">
+<meta property="og:type" content="article">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0B1A33; --navy-2:#122646; --navy-3:#1B3461;
+  --gold:#C6A24B; --gold-2:#E2C577; --gold-dim:#8A6E2C;
+  --ivory:#F5EFE2; --ivory-2:#EADFC9; --paper:#FBF8F1;
+  --text:#1A2233; --muted:#55607A; --line:#D9CFB8;
+  --on-dark:#EEE8DA; --on-dark-muted:#B9BFCC;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --paper:#0E1526; --ivory:#121B30; --ivory-2:#182340; --text:#EEE8DA; --muted:#B9BFCC; --line:#2A3A5E; }}
+:root[data-theme="dark"]{ --paper:#0E1526; --ivory:#121B30; --ivory-2:#182340; --text:#EEE8DA; --muted:#B9BFCC; --line:#2A3A5E; }
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 70px);scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--paper);color:var(--text);font-family:"Source Sans 3",Segoe UI,Helvetica,Arial,sans-serif;font-size:18px;line-height:1.6}
+h1,h2,h3,blockquote,.serif{font-family:"Cormorant Garamond",Garamond,Georgia,serif;font-weight:600;line-height:1.1;margin:0;letter-spacing:.002em}
+h1{font-size:clamp(2.6rem,5.8vw,4.6rem);font-weight:600}
+h2{font-size:clamp(2.1rem,4vw,3.1rem);margin-bottom:.5em}
+h3{font-size:1.65rem;font-weight:700}
+p{margin:0 0 1em;max-width:64ch}
+a{color:inherit}
+img{max-width:100%;display:block}
+.wrap{width:min(1140px,100% - 2.5rem);margin-inline:auto}
+section{padding:5.5rem 0}
+@media (max-width:720px){section{padding:3.75rem 0}}
+.rule{width:64px;height:3px;background:var(--gold);margin:0 0 1.6rem}
+.dark{background:var(--navy);color:var(--on-dark)}
+.dark h2,.dark h3{color:#fff}
+.dark p{color:var(--on-dark)}
+.dark .muted,.dark .meta{color:var(--on-dark-muted)}
+
+/* header */
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--navy);color:var(--on-dark);border-bottom:1px solid var(--navy-3)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:70px;gap:1rem}
+.brand{text-decoration:none;color:#fff;display:flex;align-items:center;gap:.75rem}
+.brand .mono{width:40px;height:40px;border:1.5px solid var(--gold);display:grid;place-items:center;font-family:"Cormorant Garamond",serif;font-weight:700;font-size:1.25rem;color:var(--gold-2)}
+.brand b{display:block;font-family:"Cormorant Garamond",serif;font-size:1.35rem;font-weight:700;line-height:1}
+.brand small{display:block;font-size:.76rem;color:var(--on-dark-muted);letter-spacing:.03em;margin-top:.2rem}
+.nav ul{display:flex;gap:1.5rem;list-style:none;margin:0;padding:0;font-weight:500;font-size:.97rem}
+.nav ul a{text-decoration:none;color:var(--on-dark)}
+.nav ul a:hover{color:var(--gold-2)}
+.lang{border:1px solid var(--navy-3);padding:.3rem .6rem;font-size:.85rem;text-decoration:none;color:var(--on-dark-muted)}
+.lang strong{color:#fff}
+@media (max-width:900px){.nav ul{display:none}}
+
+.btn{display:inline-block;padding:.9rem 1.5rem;font-weight:600;text-decoration:none;font-size:1rem;line-height:1.2;border:1.5px solid var(--gold)}
+.btn-gold{background:var(--gold);color:var(--navy)}
+.btn-gold:hover{background:var(--gold-2)}
+.btn-ghost{color:var(--gold-2);background:transparent}
+.btn-ghost:hover{background:rgba(198,162,75,.12)}
+.btn-navy{background:var(--navy);color:#fff;border-color:var(--navy)}
+.btn-navy:hover{background:var(--navy-3)}
+.btn-outline{color:var(--navy);border-color:var(--navy);background:transparent}
+.btn-outline:hover{background:var(--ivory-2)}
+:focus-visible{outline:3px solid var(--gold-2);outline-offset:3px}
+
+/* hero */
+.hero{background:linear-gradient(180deg,var(--navy) 0%,var(--navy-2) 100%);color:var(--on-dark);padding:4.5rem 0 0;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:3rem;align-items:end}
+.hero .copy{padding-bottom:4.5rem}
+.kicker{color:var(--gold-2);font-weight:600;font-size:1rem;letter-spacing:.02em;margin-bottom:1.3rem}
+.hero h1{color:#fff}
+.hero .lead{font-size:1.3rem;margin:1.5rem 0 .8rem;max-width:34rem;color:var(--on-dark)}
+.hero .where{font-size:1rem;color:var(--on-dark-muted);margin-bottom:2.2rem}
+.cta{display:flex;flex-wrap:wrap;gap:.9rem}
+.portrait{position:relative;align-self:end}
+.portrait img{width:100%;height:auto;border-top:4px solid var(--gold)}
+.portrait::after{content:"";position:absolute;left:0;right:0;bottom:0;height:35%;background:linear-gradient(180deg,transparent,rgba(11,26,51,.55))}
+.hero .cap{grid-column:1/-1;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1rem;border-top:1px solid var(--navy-3);padding:1.2rem 0}
+.hero .cap b{font-family:"Cormorant Garamond",serif;font-size:1.35rem;font-weight:700;color:#fff}
+.hero .cap span{color:var(--on-dark-muted);font-size:.98rem}
+@media (max-width:900px){
+  .hero{padding-top:3rem}
+  .hero .wrap{grid-template-columns:1fr;gap:2rem}
+  .hero .copy{padding-bottom:0}
+  .portrait{max-width:420px;width:100%;margin:0 auto}
+}
+
+/* credentials strip */
+.strip{background:var(--gold);color:var(--navy);padding:1.6rem 0}
+.strip .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem}
+.strip b{display:block;font-family:"Cormorant Garamond",serif;font-size:2.2rem;font-weight:700;line-height:1}
+.strip span{font-size:.95rem;font-weight:500}
+@media (max-width:860px){.strip .wrap{grid-template-columns:1fr 1fr}}
+
+/* posicionamento */
+.dark blockquote{color:#fff;font-size:clamp(1.45rem,2.2vw,1.85rem);font-weight:500;font-style:italic;line-height:1.35;border-left:3px solid var(--gold);padding-left:1.2rem;margin:1.6rem 0 1.6rem}
+.side{position:sticky;top:90px;align-self:start}
+@media (max-width:860px){.side{position:static}}
+blockquote cite{display:block;font-style:normal;font-family:"Source Sans 3",sans-serif;font-size:.95rem;color:var(--muted);margin-top:1rem;font-weight:500}
+
+/* areas */
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem 3rem;margin-top:3rem}
+@media (max-width:760px){.grid2{grid-template-columns:1fr}}
+.area{background:var(--navy-2);border-top:4px solid var(--gold);padding:2rem 2rem 1.6rem}
+.area h3{margin-bottom:.6rem;color:#fff}
+.area p{color:var(--on-dark-muted);font-size:1.02rem;margin-bottom:1.1rem}
+.area ul{columns:2;column-gap:1.5rem;list-style:none;margin:0;padding:0;font-size:1rem}
+.area li{break-inside:avoid;padding:.3rem 0;border-bottom:1px solid var(--navy-3);color:var(--on-dark)}
+@media (max-width:480px){.area ul{columns:1}}
+.area .tag{display:inline-block;font-size:.85rem;font-weight:600;color:var(--gold-2);margin-top:1rem}
+
+/* consulta */
+.paths{display:grid;grid-template-columns:1fr 1fr;gap:1.6rem;margin-top:3rem}
+@media (max-width:760px){.paths{grid-template-columns:1fr}}
+.path{border:1px solid var(--line);padding:2.2rem;background:var(--paper);display:flex;flex-direction:column}
+.path.main{background:var(--navy);color:var(--on-dark);border-color:var(--navy)}
+.path.main h3{color:#fff}
+.path h3{margin-bottom:.35rem;color:var(--navy)}
+.path .meta{color:var(--muted);font-size:.98rem;margin-bottom:1.3rem;font-weight:500}
+.path.main .meta{color:var(--gold-2)}
+.path ol{padding-left:1.2rem;margin:0 0 1.6rem;font-size:1.02rem}
+.path li{margin-bottom:.5rem}
+.path.main li{color:var(--on-dark)}
+.path .fee{font-size:.95rem;color:var(--muted);margin-bottom:1.4rem}
+.path.main .fee{color:var(--on-dark-muted)}
+.path .btn{align-self:flex-start;margin-top:auto}
+.note{font-size:.95rem;color:var(--muted);margin-top:1.6rem;max-width:72ch}
+
+/* trajetória */
+.timeline{list-style:none;margin:2.2rem 0 0;padding:0;border-left:2px solid var(--gold-dim)}
+.timeline li{padding:0 0 1.5rem 1.6rem;position:relative}
+.timeline li::before{content:"";position:absolute;left:-7px;top:.5rem;width:12px;height:12px;border-radius:50%;background:var(--gold);border:2px solid var(--navy)}
+.timeline b{display:block;color:#fff;font-weight:600;font-size:1.08rem}
+.timeline span{color:var(--on-dark-muted);font-size:.98rem}
+.two{display:grid;grid-template-columns:.95fr 1.05fr;gap:4rem}
+@media (max-width:860px){.two{grid-template-columns:1fr;gap:2.5rem}}
+.chips{list-style:none;margin:1.5rem 0 0;padding:0;display:flex;flex-wrap:wrap;gap:.6rem}
+.chips li{border:1px solid var(--gold-dim);color:var(--on-dark);padding:.4rem .8rem;font-size:.92rem}
+
+/* artigos */
+.artigos{background:var(--ivory)}
+.artigos .list{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-top:2.5rem}
+@media (max-width:760px){.artigos .list{grid-template-columns:1fr}}
+.artigos article{border-top:3px solid var(--navy);padding-top:1.1rem}
+.artigos article small{color:var(--gold-dim);font-weight:700;font-size:.85rem}
+.artigos article h3{font-size:1.4rem;margin:.4rem 0 .5rem;color:var(--navy)}
+.artigos article p{font-size:1rem;color:var(--muted);margin-bottom:.4rem}
+
+/* faq */
+.faq details{border-bottom:1px solid var(--line);padding:1.1rem 0}
+.faq summary{cursor:pointer;font-weight:600;font-size:1.1rem;list-style:none;display:flex;justify-content:space-between;gap:1rem;color:var(--navy)}
+.dark.faq summary{color:#fff}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--gold);font-size:1.5rem;line-height:1}
+.faq details[open] summary::after{content:"×"}
+.faq details p{margin:.8rem 0 0;color:var(--muted);font-size:1.02rem}
+
+/* contato */
+.contato{background:var(--ivory)}
+.contato .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:3rem;align-items:start}
+@media (max-width:760px){.contato .wrap{grid-template-columns:1fr}}
+.contato dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:.65rem 1.5rem;font-size:1rem}
+.contato dt{color:var(--muted)}
+.contato dd{margin:0;font-weight:500}
+.aviso{font-size:.9rem;color:var(--muted);border-top:1px solid var(--line);padding-top:1.2rem;margin-top:2.5rem;max-width:none}
+footer{background:var(--navy);color:var(--on-dark-muted);padding:2rem 0 2.5rem;font-size:.9rem}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem}
+footer a{text-decoration:none;margin-right:1.2rem;color:var(--on-dark)}
+</style>
+
+<style>
+.article{max-width:74ch;margin:0 auto}
+.article h1{font-size:clamp(2.2rem,4.5vw,3.4rem);max-width:none;margin-bottom:1rem}
+.article .byline{color:var(--muted);font-size:.95rem;margin-bottom:2.5rem}
+.article h2{font-size:clamp(1.6rem,3vw,2.1rem);margin:2.6rem 0 .8rem;color:var(--navy)}
+.article h3{font-size:1.35rem;margin:1.8rem 0 .5rem;color:var(--navy)}
+.article p{max-width:none}
+.article .summary{font-size:1.2rem;border-left:4px solid var(--gold);padding:.4rem 0 .4rem 1.2rem;margin:0 0 2rem;color:var(--text)}
+.article .box{background:var(--ivory);border:1px solid var(--line);padding:1.4rem 1.6rem;margin:1.8rem 0}
+.article .box p{margin:0}
+.article table{border-collapse:collapse;width:100%;font-size:1rem;margin:1rem 0 1.5rem}
+.article th,.article td{border-bottom:1px solid var(--line);padding:.6rem .5rem;text-align:left;vertical-align:top}
+.article th{color:var(--navy);font-weight:600}
+.ctaband{background:var(--navy);color:var(--on-dark);padding:2.5rem 0}
+.ctaband h2{color:#fff;margin-bottom:.4rem}
+.ctaband p{color:var(--on-dark-muted)}
+.crumbs{font-size:.9rem;color:var(--muted);margin-bottom:1.5rem}
+.crumbs a{color:var(--muted);text-decoration:none}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"Article","headline":"How Foreign Companies Win Public Contracts in Brazil: Law 14,133 Tenders, State-Owned Companies and the Petrobras Supplier Registration","datePublished":"2026-10-13","dateModified":"2026-10-13","inLanguage":"en","author":{"@type":"Person","name":"Gustavo Russignoli Bugalho","jobTitle":"Lawyer (OAB/SP 235.825)","url":"https://gustavobugalho.com.br/en/"},"publisher":{"@type":"Person","name":"Gustavo Russignoli Bugalho"},"mainEntityOfPage":"https://gustavobugalho.com.br/en/guides/foreign-companies-public-contracts-brazil/"},
+{"@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Can a foreign company bid for public contracts in Brazil without a local subsidiary?","acceptedAnswer":{"@type":"Answer","text":"Yes, in international tenders and in direct contracting, with a legal representative in Brazil and equivalent qualification documents. In practice, services performed inside Brazil and most state-company contracts favor or require a Brazilian-registered entity, which is why foreign service providers usually work through a local partner, a consortium or a subsidiary."}},
+{"@type":"Question","name":"How does a foreign company register as a Petrobras supplier?","acceptedAnswer":{"@type":"Answer","text":"Through the Petronect portal, in the Petrobras supplier registration, which evaluates legal, technical, economic and integrity criteria by supply family. Approved companies receive a Supplier Registration Certificate (CRC), which replaced the former CRCC, and can be notified of tenders in their families. Registration does not guarantee participation in any contract."}},
+{"@type":"Question","name":"What local content rules apply to offshore oil and gas work in Brazil?","acceptedAnswer":{"@type":"Answer","text":"Minimum local content percentages are set by the National Energy Policy Council (CNPE) and written into exploration and production contracts, verified by the ANP. Since 2017 offshore blocks have carried 18 percent in exploration and, in development, 25 percent for well construction, 40 percent for subsea systems and 25 percent for production units, with later adjustments and, since Law 15,075 of 2024, the possibility of transferring surplus local content between contracts."}},
+{"@type":"Question","name":"What taxes apply when a Brazilian company pays a foreign service provider?","acceptedAnswer":{"@type":"Answer","text":"Withholding income tax of 15 percent (25 percent for providers in listed low-tax jurisdictions), CIDE of 10 percent on technical and administrative services, PIS and COFINS on service imports totaling 9.25 percent when the service is performed or has its result in Brazil, municipal ISS of 2 to 5 percent and IOF on the exchange, in a combination that commonly adds 40 percent or more to the cost of the service."}}
+]}
+]}
+</script>
+</head>
+<body>
+
+<header>
+  <nav class="wrap nav" aria-label="Main">
+    <a class="brand" href="/en/"><span class="mono">GB</span><span><b>Gustavo Bugalho</b><small>Legal and Strategic Counsel</small></span></a>
+    <ul>
+      <li><a href="/en/#practice">Practice</a></li>
+      <li><a href="/en/#consult">Consultation</a></li>
+      <li><a href="/en/#background">About</a></li>
+      <li><a href="/en/#articles">Guides</a></li>
+      <li><a href="/en/#contact">Contact</a></li>
+    </ul>
+    <a class="lang" href="/" hreflang="pt-BR" lang="pt-BR">PT / <strong>EN</strong></a>
+  </nav>
+</header>
+
+<main>
+<section>
+  <div class="wrap">
+    <article class="article">
+      <div class="crumbs"><a href="/en/">Home</a> · <a href="/en/#articles">Guides</a> · Public contracts for foreign companies</div>
+      <h1>How foreign companies win public contracts in Brazil: Law 14,133 tenders, state-owned companies and the Petrobras supplier registration</h1>
+      <div class="byline">By Gustavo Russignoli Bugalho, lawyer (OAB/SP 235.825), former Municipal Secretary of Legal Affairs · Updated October 2026 · 13 minute read</div>
+
+      <p class="summary">Brazil's public sector buys from foreign companies, and the law says so expressly: international tenders admit foreign bidders, foreign-currency quotes and equivalent qualification documents. The practical picture is more selective. Federal, state and municipal bodies buy under Law 14,133 of 2021; state-owned companies such as Petrobras buy under Law 13,303 of 2016 and their own regulations; and every contract performed inside Brazil runs into tax, labor and local-content rules that favor a Brazilian-registered supplier. This guide explains the three regimes, how to register with Petrobras, what local content means for offshore work, what it really costs to be paid from Brazil as a foreign provider, and how to decide between bidding from abroad, partnering or setting up locally.</p>
+
+      <h2>Three regimes, not one</h2>
+      <p>The first mistake foreign companies make is to assume that "Brazilian public procurement" is a single system. It is three. Direct public administration and most public entities, from ministries to city halls, universities and regulatory agencies, follow Law 14,133, the general procurement statute in force for all of them since January 2024. State-owned and mixed-capital companies, including Petrobras, Eletrobras-era subsidiaries that remain public, Banco do Brasil, Caixa, the Post Office and dozens of state and municipal companies, follow Law 13,303, which sets principles and limits but leaves the detailed procedure to each company's own regulation; Petrobras's is the RLCP, its Procurement and Contracts Regulation, now in its third revision. Defense purchases follow a third, special regime under Law 12,598, covered in a separate guide. Knowing which regime governs the buyer decides the rules of entry, the documents, the deadlines and the remedies.</p>
+
+      <h2>Bidding from abroad under Law 14,133</h2>
+      <p>Law 14,133 defines an international tender as one processed in Brazil that admits foreign bidders, with the possibility of quoting in foreign currency, or whose object may or must be performed in whole or in part abroad. The presence of a foreign bidder alone does not make a tender international; the notice must be designed that way. In international tenders the notice must conform to Brazil's monetary and foreign-trade policy, foreign-currency quotes are converted at a set rate for judgment, all bidders get the same payment guarantees and conditions, and the notice cannot impose qualification conditions that discriminate between Brazilian and foreign companies beyond what the law itself allows. Tenders funded by foreign agencies or international financial institutions may follow the funder's rules under the law's opening provisions.</p>
+      <p>Qualification is where foreign bidders stumble. The law requires foreign companies that do not operate in Brazil to present equivalent documents, in the form of a federal regulation. That regulation has been pending, so in practice each tender notice defines what it accepts, documents issued by foreign entities are accepted with a Portuguese translation, and buyers such as the Federal Senate have required equivalence for every qualification item except legal standing, where the foreign company's own constitutive documents are accepted. Equivalence means a document that fulfills the same purpose: a home-country tax clearance for a Brazilian tax clearance, audited statements for the economic-financial tests, client certificates for technical capacity. Where no equivalent exists, the bidder declares so. A foreign bidder also needs a representative in Brazil with powers to receive service of process and to sign on its behalf, since a foreign company without government authorization can only perform isolated acts in Brazil; the representative does not need to be qualified in the tender, only to prove its powers.</p>
+      <p>Two preferences tilt the field. The law allows margins of preference for Brazilian manufactured products and services, with an additional margin for products and services whose technology was developed in Brazil. And tenders may be reserved for Brazilian products and services in specific sectors, defense being the clearest case. In ordinary purchases of goods and standard services these margins are modest and often not applied; in strategic sectors they are decisive.</p>
+
+      <h2>Direct contracting with foreign companies</h2>
+      <p>Not every public contract goes through a tender. Law 14,133 allows direct contracting when competition is impossible, typically a sole supplier of a proprietary product or an exclusive representative, and when a tender is dispensable for reasons the law lists, including low value, emergencies, certain research and innovation purchases and contracts that could compromise national security. Foreign companies can be contracted directly on these grounds, with the same representation and documentation requirements, and the file is reviewed afterwards by the internal control bodies and the Federal Court of Accounts. A foreign supplier offered a direct contract should insist that the justification be sound, because defects in the justification are the usual ground for annulment and for the supplier being asked to return payments years later.</p>
+
+      <h2>State-owned companies and Law 13,303</h2>
+      <p>Law 13,303 requires public companies to run competitive procedures for their contracts, subject to listed exceptions for dispensable and unenforceable tenders and for business opportunities and partnerships tied to the company's purpose, and tells each company to adopt its own procurement regulation within the law's framework. The law sets the qualification parameters, allows registration systems to be used for qualification and pre-qualification, and allows tenders to be restricted to pre-qualified suppliers. It also leaves state companies free to use negotiation, phased procedures, reverse auctions and their own catalogues in ways that the general statute does not. For a foreign supplier this means that the practical rules are found in the company's regulation and in its supplier portal, not in the statute.</p>
+
+      <h2>Petrobras: how the supplier registration actually works</h2>
+      <p>Petrobras is the largest single buyer in the country and the one most foreign maritime, engineering and energy companies want to reach. Its procurement runs under its RLCP and through the Petronect portal, where tenders are published, bids are submitted and suppliers are registered. Three things to understand before starting.</p>
+      <p>The supplier registration is a pre-qualification, not a license. Petrobras's registry is a database of Brazilian and foreign companies evaluated in advance against the qualification parameters of Law 13,303 for the families of goods and services the company buys. Registration is done online through Petronect, by supply family, and assesses four criteria: legal, technical, economic and integrity. The legal criterion is not applied to foreign companies, which present their home-country documents instead. The technical criterion checks that the company has supplied the family before and has the means to do so again. The economic criterion looks for financial solidity, through indicators and statements, to ensure the supplier can complete the contract. The integrity criterion is an anti-corruption due diligence, mandatory for every company that opens, renews or reclassifies its registration. Approved companies receive a Supplier Registration Certificate (CRC), total when all parameters are met for the family and partial when at least one is, which replaced the former CRCC; the certificate has a validity period and depends on the company keeping its data current. Petrobras states plainly that the certificate does not guarantee participation in any contract; what it does is make the company visible to Petrobras buyers, allow notification of tenders in its families, and spare it from re-proving qualification in each tender where the same requirements apply.</p>
+      <p>The portal is unforgiving. Foreign companies regularly stall halfway through: documents uploaded in the wrong format, families chosen that do not match the company's actual history, economic indicators that fail because statements were not translated or reconciled, and a due-diligence questionnaire answered without the supporting policies. A registration left incomplete simply sits there. Most of the registrations I am asked to rescue failed on administrative detail, not on substance.</p>
+      <p>Goods and services are treated differently. A foreign manufacturer can register and sell equipment to Petrobras from abroad, delivered under an import contract, often under the Repetro-Sped customs regime that suspends federal taxes on goods used in oil and gas exploration and production, which Law 13,586 of 2017 extended to 2040. Services performed on Brazilian territory or in Brazilian waters, which is what maintenance, refits, upgrades and offshore accommodation work are, are contracted in practice from a company that can issue Brazilian invoices, employ or subcontract under Brazilian labor and safety rules, and carry the local liabilities. A foreign service provider with no entity in Brazil therefore reaches Petrobras through a Brazilian partner that holds the contract, through a consortium in which the Brazilian member leads, or through its own subsidiary. Which of the three makes sense depends on volume, on who carries the risk and on the tax arithmetic below.</p>
+
+      <h2>Local content in offshore work</h2>
+      <p>Brazil's exploration and production contracts carry minimum local content obligations, set by the National Energy Policy Council (CNPE) and verified and enforced by the ANP, the oil regulator, which certifies local content and applies penalties for shortfalls. Since the 2017 round, offshore blocks have carried a global minimum of 18 percent in the exploration phase and, in the development phase, 25 percent for well construction, 40 percent for subsea collection and export systems and 25 percent for stationary production units, with further CNPE resolutions since and a 2025 decision on minimums for support vessels built in Brazil. Law 15,075 of 2024 allowed surplus local content to be transferred between contracts. These obligations fall on the operator, but they shape what the operator and Petrobras ask of every supplier: a Brazilian-certified share of goods and services in each package. A foreign supplier that can show how its work contributes to the operator's local-content score, through Brazilian fabrication, assembly, labor or partners, is a more attractive counterparty than one that cannot.</p>
+
+      <h2>What it costs to be paid from Brazil</h2>
+      <p>This is the part of the business case that foreign service companies most often get wrong, and it decides whether bidding from abroad is viable. When a Brazilian company pays a foreign provider for services, the payment attracts withholding income tax at 15 percent, or 25 percent if the provider is in a jurisdiction Brazil lists as low-tax; a 10 percent CIDE contribution on technical and administrative-assistance services, which the Federal Revenue applies to technical services whether or not they involve technology transfer; PIS and COFINS on service imports totaling 9.25 percent when the service is performed in Brazil or produces its result here; municipal ISS of 2 to 5 percent on services imported from abroad; and IOF on the foreign-exchange operation. Where the service is performed entirely abroad with its result abroad, the import contributions do not apply, but offshore work in Brazilian waters is performed in Brazil. Brazil has tax treaties with some countries that reduce or reorganize these charges, and none with others, Estonia among them. The combined effect routinely adds 40 percent or more to the cost of the service to the Brazilian payer, which the buyer will either deduct from the price or refuse to bear. A Brazilian entity invoicing locally faces a different and usually lighter combination, which is the arithmetic that pushes foreign service providers toward partnership or incorporation once volume justifies it.</p>
+
+      <h2>Choosing the route</h2>
+      <p>Three questions settle it. Is the object goods or services, and where is it performed? Goods delivered from abroad can be sold directly; services performed in Brazil, in practice, cannot. What is the expected volume over three years? One-off contracts justify an agent or a partner; recurring work justifies a subsidiary, which also unlocks the investor residence route for the executives who will run it. And who carries the risk? A Brazilian partner holding the contract carries the labor, tax and performance liabilities, and prices that into its margin; a subsidiary keeps the margin and the liability with the group. A sensible sequence for a foreign company testing the market is to complete the Petrobras registration as a foreign supplier of goods, find a Brazilian partner for the service component, bid once or twice in consortium, and only then decide on incorporation with real numbers in hand.</p>
+
+      <h2>Common mistakes</h2>
+      <p>Assuming one procurement law governs all buyers. Starting the Petrobras registration without the supply families, documents and due-diligence answers prepared in advance, and abandoning it halfway. Quoting a service price from abroad without the Brazilian tax gross-up and losing the contract on cost. Treating the local representative as a formality rather than a person who will receive lawsuits. Ignoring local content when assembling a package for an operator. And appointing an agent with no track record on Petronect because they claim to have contacts: contacts do not clear the economic criterion.</p>
+
+      <h2>Frequently asked questions</h2>
+      <h3>Can a foreign company bid for public contracts in Brazil without a subsidiary?</h3>
+      <p>Yes, in international tenders and in direct contracting, with a legal representative and equivalent documents. Services performed in Brazil and most state-company contracts favor or require a Brazilian-registered entity in practice.</p>
+      <h3>How does a foreign company register as a Petrobras supplier?</h3>
+      <p>Through Petronect, by supply family, against the legal, technical, economic and integrity criteria. Approval yields the Supplier Registration Certificate (CRC). Registration does not guarantee a contract.</p>
+      <h3>Does Petrobras buy services from companies with no presence in Brazil?</h3>
+      <p>Goods, yes. Services performed in Brazilian territory or waters are in practice contracted from a Brazilian-invoicing entity, so foreign service providers work through partners, consortia or subsidiaries.</p>
+      <h3>What local content applies to offshore work?</h3>
+      <p>Percentages set by the CNPE and enforced by the ANP in each contract: 18 percent in exploration and, in development, 25 percent for wells, 40 percent for subsea systems and 25 percent for production units under the 2017 framework, with later adjustments and transferability of surplus since 2024.</p>
+      <h3>What taxes apply when a Brazilian company pays a foreign provider?</h3>
+      <p>Withholding income tax, CIDE on technical services, PIS and COFINS on service imports, municipal ISS and IOF, commonly adding 40 percent or more to the cost of the service, with no treaty relief for countries that have no tax treaty with Brazil.</p>
+      <h3>Is a Brazilian partner mandatory?</h3>
+      <p>Not by law for goods. For services performed in Brazil and for local-content purposes it is, in practice, the way the market works until the foreign company incorporates.</p>
+    </article>
+  </div>
+</section>
+
+<section class="ctaband">
+  <div class="wrap">
+    <h2>Trying to reach Petrobras or a Brazilian public buyer?</h2>
+    <p>A 60-minute consultation in English reviews where your Petronect registration stands, which route fits your product or service, the tax gross-up on your price and the partner or structure you need, with a written summary afterwards.</p>
+    <div class="cta" style="margin-top:1.2rem">
+      <a class="btn btn-gold" href="https://cal.com/gustavobugalho/consultation">Book a consultation</a>
+      <a class="btn btn-ghost" href="https://cal.com/gustavobugalho/intro-call">Free 15-minute call</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="article">
+      <h2>Sources</h2>
+      <p>Law 14,133 of 1 April 2021, arts. 1, 6 (XXXV), 26, 52, 67 (§4), 70 (sole paragraph), 74 and 75; Law 13,303 of 30 June 2016, arts. 28 to 30, 40, 58 and 63 to 65; Petrobras Procurement and Contracts Regulation (RLCP, revision 3) and the Petrobras Supplier Channel and Petronect guidance on supplier registration, criteria and the Supplier Registration Certificate; Law 9,478 of 1997 (Petroleum Law), CNPE Resolution 7 of 2017 and later resolutions, ANP local-content regulations and Law 15,075 of 2024; Law 13,586 of 2017 (Repetro-Sped); Law 10,168 of 2000 (CIDE), Law 10,865 of 2004 (PIS/COFINS on imports) and Federal Revenue consultation rulings on withholding on technical services; procurement scholarship and practitioner commentary on international tenders and equivalent documents.</p>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="wrap">
+    <p class="aviso" style="margin-top:0;border-top:none"><b>Notice.</b> This guide describes Brazilian law and practice in general terms as of October 2026 and is not legal advice for any specific case or transaction. Procurement rules, Petrobras's supplier procedures, local-content percentages and tax rates change; confirm every point for your situation before acting on it, including the effects of Brazil's consumption-tax reform in transition. Content provided in accordance with Resolution 205/2021 of the Brazilian Bar Association's Federal Council.</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>Gustavo Russignoli Bugalho · OAB/SP 235.825 · © 2026</div>
+    <div><a href="/en/">Home</a><a href="/" lang="pt-BR">Português</a></div>
+  </div>
+</footer>
+</body>
+</html>
